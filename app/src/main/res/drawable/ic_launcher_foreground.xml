@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 그린 언덕 -->
+    <path
+        android:fillColor="#3B6E4C"
+        android:pathData="M22,72 C38,62 70,62 86,72 C76,82 32,82 22,72 Z" />
+    <!-- 홀컵 -->
+    <path
+        android:fillColor="#1F2721"
+        android:pathData="M48,71 a6,2.5 0 1,0 12,0 a6,2.5 0 1,0 -12,0" />
+    <!-- 깃대 -->
+    <path
+        android:fillColor="#7C583B"
+        android:pathData="M53,30 h2.4 v41 h-2.4 z" />
+    <!-- 붉은 깃발 -->
+    <path
+        android:fillColor="#B5633F"
+        android:pathData="M55.4,30 L76,37 L55.4,44 Z" />
+    <!-- 골프공 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,69 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0" />
+</vector>
