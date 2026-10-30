@@ -159,44 +159,53 @@
     </header>
 
     <div class="intro">
-      미니게임 - 만능 룰렛 &amp; 골프 복불복 (패키지명: <code>com.jjalddalmark.minigamerullet</code>, 이하 '앱')은 이용자의 프라이버시와 개인정보 권리를 소중히 보호하며 대한민국 개인정보 보호법 및 Google Play 개발자 프로그램 정책을 준수합니다. 본 앱은 회원가입이나 외부 서버 통신 없이 스마트폰 내부에서 단독으로 동작하는 오프라인 아케이드 게임 앱입니다.
+      미니게임 - 만능 룰렛 &amp; 골프 복불복 (패키지명: <code>com.jjalddalmark.minigamerullet</code>, 이하 '앱')은 이용자의 프라이버시와 개인정보 권리를 소중히 보호하며 대한민국 개인정보 보호법 및 Google Play 개발자 프로그램 정책을 준수합니다. 본 앱은 별도의 회원가입이나 자체 외부 서버 없이 동작하며, 무료 서비스 제공을 위한 Google AdMob 광고 송출 외에는 모든 게임 설정과 기록을 이용자 스마트폰 내부에서만 처리합니다.
     </div>
 
     <section>
-      <h2>1. 수집하는 개인정보 항목 및 외부 전송 여부</h2>
+      <h2>1. 수집하는 개인정보 항목 및 자체 서버 미운영 원칙</h2>
       <p>
-        본 앱은 별도의 회원가입, 로그인, 본인인증 절차를 두지 않으며 이름, 이메일 주소, 전화번호, 기기 고유 식별자, 광고 식별자(ADID), 위치 정보 등 어떠한 개인정보도 수집하지 않습니다.
+        본 앱은 별도의 회원가입, 로그인, 본인인증 절차를 두지 않으며 개발자가 직접 운영하는 외부 서버로 이름, 이메일 주소, 전화번호, 연락처, 정밀 위치 정보 등 이용자의 개인 식별 정보를 수집하거나 저장하지 않습니다.
       </p>
       <p>
-        또한 본 앱은 인터넷 네트워크 권한(<code>android.permission.INTERNET</code>) 자체를 요구하지 않으며 개발자 서버나 외부 클라우드로 어떠한 이용 기록도 전송하거나 저장하지 않습니다.
+        단, 무료 앱 서비스 운영을 위해 탑재된 Google LLC의 <strong>Google AdMob (Google Mobile Ads SDK)</strong>이 광고 표시, 노출 빈도 제한, 무효 트래픽 및 부정 클릭 방지를 위해 아래의 비식별 기기 정보를 암호화 통신(HTTPS/TLS)으로 자동 처리할 수 있습니다.
       </p>
+      <ul>
+        <li><strong>광고 식별자 (<code>com.google.android.gms.permission.AD_ID</code>)</strong>: 맞춤형 또는 비맞춤형 광고 제공 및 광고 성과 집계에 활용되며 이용자가 스마트폰 설정에서 언제든 재설정하거나 삭제할 수 있습니다.</li>
+        <li><strong>기기 및 네트워크 기본 정보</strong>: 기기 모델명, OS 버전, 화면 크기, 언어 설정, IP 기반 대략적 국가·지역 정보, 광고 노출·상호작용 및 진단 로그가 Google 개인정보처리방침(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">https://policies.google.com/privacy</a>)에 따라 처리됩니다.</li>
+      </ul>
     </section>
 
     <section>
       <h2>2. 기기 내부에서만 처리되는 로컬 데이터 안내</h2>
       <p>
-        앱은 원활한 게임 진행과 사용자 편의 기능 제공을 위해 아래 항목을 이용자의 스마트폰 내부 저장소에만 보관합니다. 해당 정보는 기기 밖으로 절대 유출되지 않습니다.
+        앱은 원활한 게임 진행과 사용자 편의 기능 제공을 위해 아래 항목을 이용자의 스마트폰 내부 저장소에만 보관합니다. 해당 정보는 외부 서버나 광고 SDK로 전송되지 않습니다.
       </p>
       <ul>
-        <li><strong>참가자 별칭 및 앱 환경설정</strong>: 게임 화면에서 이용자가 임의로 지정한 참가자 호칭(예: 1번캐디백, 김프로 등), 게임 진행 시간, 배경음악 및 효과음 볼륨 설정값은 앱 내부 설정 저장소(Android DataStore)에만 저장됩니다.</li>
+        <li><strong>참가자 별칭 및 앱 환경설정</strong>: 게임 화면에서 이용자가 임의로 지정한 참가자 호칭(예: 1번캐디백, 김프로 등), 게임 진행 시간, 배경음악 및 효과음 볼륨 설정값은 앱 내부 설정 저장소에만 저장됩니다.</li>
         <li><strong>맞춤 룰렛 프리셋 및 추첨 기록</strong>: 만능 결정 룰렛+ 및 언덕 위 풍차 룰렛에서 이용자가 직접 작성한 선택지 목록, 가중치, 추첨 이력, 편집 잠금용 로컬 비밀번호(4자리 숫자 PIN)는 앱 전용 내부 디렉터리에만 보관됩니다.</li>
         <li><strong>결과 카드 이미지 및 진행 영상 파일</strong>: 이용자가 결과 공유 기능을 실행할 때 생성되는 이미지(JPEG)와 동영상(MP4) 파일은 앱 임시 캐시 공간에서 합성됩니다. 이후 이용자가 직접 메신저 공유 버튼(카카오톡, 문자 메시지, 텔레그램, 시스템 공유 시트)이나 갤러리 저장 버튼을 눌렀을 때에만 Android 표준 공유 인터페이스(FileProvider 일회성 읽기 권한) 또는 기기 미디어 저장소(<code>Pictures/MinigameRullet</code>, <code>Movies/MinigameRullet</code>)로 전달됩니다.</li>
       </ul>
     </section>
 
     <section>
-      <h2>3. 제3자 제공 및 외부 광고&middot;분석 도구 미포함</h2>
+      <h2>3. 제3자 서비스(Google AdMob) 안내 및 맞춤형 광고 거부권</h2>
       <p>
-        앱은 이용자의 데이터를 광고 네트워크, 데이터 브로커, 분석 업체 등 어떠한 제3자에게도 판매, 대여, 제공하거나 공유하지 않습니다. 앱 내부에는 제3자 맞춤형 광고 SDK나 외부 행동 추적 분석 도구가 일절 포함되어 있지 않습니다.
+        개발자는 이용자의 로컬 게임 데이터를 제3자에게 판매하거나 대여하지 않습니다. 앱 내 홈 하단 배너 및 종료·최소화 전면 광고 송출을 위해 연동된 Google AdMob의 광고 개인 최적화는 이용자가 아래 경로에서 언제든지 직접 제한하거나 광고 ID를 삭제할 수 있습니다.
       </p>
+      <ul>
+        <li><strong>Android 기기 설정 경로</strong>: [설정 &gt; Google &gt; 모든 서비스 &gt; 광고] 메뉴에서 <strong>광고 ID 재설정</strong> 또는 <strong>광고 ID 삭제</strong>를 선택하면 기존 광고 식별자와의 연결이 즉시 해제됩니다.</li>
+        <li><strong>Google 광고 설정 웹페이지</strong>: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">https://adssettings.google.com</a></li>
+      </ul>
     </section>
 
     <section>
       <h2>4. 기기 접근 권한 및 패키지 가시성 안내</h2>
       <p>
-        앱은 게임 연출과 사용자 주도 공유 기능을 위해 최소한의 기기 기능만 사용합니다.
+        앱은 게임 연출, 사용자 주도 공유, 정식 광고 표시를 위해 최소한의 기기 권한만 사용합니다.
       </p>
       <ul>
+        <li><strong>인터넷 및 네트워크 상태 확인 (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) 및 광고 ID (<code>AD_ID</code>)</strong>: Google AdMob 광고 로드 및 오프라인 상태 감지에만 사용되며 기기 내 로컬 게임 데이터는 외부로 전송되지 않습니다.</li>
         <li><strong>진동 제어 (<code>android.permission.VIBRATE</code>)</strong>: 룰렛 바늘 회전, 주사위와 윷가락 투구, 클라이맥스 심장박동 연출 시 촉각 피드백을 제공하기 위해 사용되며 앱 내 사운드 설정에서 언제든 진동을 끌 수 있습니다.</li>
         <li><strong>메신저 앱 설치 여부 확인 (<code>&lt;queries&gt;</code> 패키지 가시성)</strong>: Android 11 이상 환경에서 이용자가 직접 결과 사진이나 영상을 공유할 때 카카오톡, 텔레그램, 기본 메시지 앱으로 공유 인텐트를 연결하기 위해 선언되어 있으며 타 앱의 대화 내역이나 연락처 정보에는 일절 접근하지 않습니다.</li>
       </ul>
@@ -216,7 +225,7 @@
     <section>
       <h2>6. 아동의 개인정보 보호</h2>
       <p>
-        본 앱은 만 14세 미만 아동을 포함한 모든 연령의 이용자로부터 어떠한 개인정보도 요구하거나 수집하지 않습니다.
+        본 앱은 만 14세 미만 아동으로부터 고의로 개인 식별 정보를 요구하거나 수집하지 않습니다.
       </p>
     </section>
 
@@ -243,12 +252,12 @@
     <section class="en-box" lang="en">
       <h2>Privacy Policy Summary (English)</h2>
       <p>
-        <strong>MiniGame - Wheel &amp; Golf Party</strong> (<code>미니게임 - 만능 룰렛 &amp; 골프 복불복</code>, Package ID: <code>com.jjalddalmark.minigamerullet</code>) operates 100% offline on your device without user accounts, external servers, third-party advertising SDKs, or analytics trackers. The app does not request <code>android.permission.INTERNET</code> and does not collect, transmit, or share any personal or sensitive user data.
+        <strong>MiniGame - Wheel &amp; Golf Party</strong> (<code>미니게임 - 만능 룰렛 &amp; 골프 복불복</code>, Package ID: <code>com.jjalddalmark.minigamerullet</code>) does not require user registration and does not operate developer-owned servers. All game settings, player nicknames, and custom roulette presets remain strictly on your device. To support free app availability, the app integrates <strong>Google AdMob (Google Mobile Ads SDK)</strong> for home bottom banner and exit/minimize interstitial ads.
       </p>
       <ul>
-        <li><strong>On-Device Preferences Only</strong>: Custom player nicknames, sound settings, and custom roulette presets/history are stored strictly locally on your device and can be cleared anytime within the app or by uninstalling the app.</li>
-        <li><strong>User-Initiated Sharing</strong>: Result images (JPEG) and gameplay videos (MP4) are generated in local app cache and shared or saved to your gallery solely when explicitly triggered by you via Android system sharing (<code>FileProvider</code> / <code>MediaStore</code>).</li>
-        <li><strong>Permissions</strong>: Only <code>android.permission.VIBRATE</code> is used for optional in-game haptic feedback.</li>
+        <li><strong>Google AdMob &amp; Advertising ID (<code>AD_ID</code>)</strong>: Google Mobile Ads SDK may automatically process your Android Advertising ID, basic device/network information, and ad interaction diagnostics over encrypted HTTPS in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">Google's Privacy Policy</a>. You may reset or delete your Advertising ID anytime under <em>Settings &gt; Google &gt; Ads</em>.</li>
+        <li><strong>On-Device Preferences &amp; User-Initiated Sharing</strong>: Custom nicknames, sound settings, and roulette presets/history stay locally on your device. Result images (JPEG) and gameplay videos (MP4) are shared or saved solely when explicitly triggered by you via Android system sharing (<code>FileProvider</code> / <code>MediaStore</code>).</li>
+        <li><strong>Permissions</strong>: <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, and <code>AD_ID</code> are used solely for Google AdMob ad delivery; <code>VIBRATE</code> is used for optional haptic feedback.</li>
         <li><strong>Contact</strong>: herosonsa1 (<a href="mailto:herosonsa1@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: 700;">herosonsa1@gmail.com</a>)</li>
       </ul>
     </section>
