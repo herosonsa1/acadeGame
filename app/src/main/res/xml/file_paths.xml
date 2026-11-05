@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 룰렛 및 전체 미니게임 결과 이미지(JPEG) · 진행 전 과정 영상(MP4) 임시 공유 캐시 경로 -->
+    <cache-path
+        name="shared_roulette"
+        path="shared_roulette/" />
+    <cache-path
+        name="shared_games"
+        path="shared_games/" />
+    <!-- 앱 내부 미디어 영구 보관 경로 -->
+    <files-path
+        name="saved_roulette_media"
+        path="roulette_media/" />
+</paths>

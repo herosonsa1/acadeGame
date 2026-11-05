@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 언덕 위 원목 풍차 기단 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M43,56 L65,56 L70,79 L38,79 Z" />
+    <!-- 4장 풍차 날개 (45, 135, 225, 315도 대각선) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M34,27 L41,34 L36,39 L29,32 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M74,27 L79,32 L72,39 L67,34 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M36,53 L41,58 L34,65 L29,60 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M72,53 L79,60 L74,65 L67,58 Z" />
+    <!-- 중앙 룰렛 원판 외곽 림 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,28 A18,18 0 1,1 53.99,28 Z M54,32.5 A13.5,13.5 0 1,0 54.01,32.5 Z" />
+    <!-- 룰렛 스포크 십자선 및 중앙 허브 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M53,31 h2 v30 h-2 z M39,45 h30 v2 h-30 z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,41.5 A4.5,4.5 0 1,1 53.99,41.5 Z" />
+    <!-- 상단 포인터 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M50,24 L58,24 L54,31 Z" />
+    <!-- 전경 골프공 및 미니 깃발 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M33,74 A3.8,3.8 0 1,1 32.99,74 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M74,62 h2 v16 h-2 z M76,62 L84,65.5 L76,69 Z" />
+</vector>
